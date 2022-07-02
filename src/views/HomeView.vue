@@ -1,12 +1,12 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <img class="mx-auto" alt="Vue logo" src="../assets/second_logo.gif">
+    <HelloWorld msg="Good Morning!"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import '../assets/tailwind.css'
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
