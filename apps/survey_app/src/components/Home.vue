@@ -6,20 +6,24 @@
       click on the About tab above on the Navbar.
     </p>
   </div>
-  <EditButton />
+  <router-link to="/survey">
+  <StartButton />
+  </router-link>
+
+  <router-view></router-view>
 </template>
 
 <script>
 import '../assets/tailwind.css'
-import EditButton from "@/components/EditButton";
+import StartButton from "@/components/StartButton";
 
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   props: {
     msg: String
   },
   components: {
-    EditButton,
+    StartButton,
   }
 }
 </script>
