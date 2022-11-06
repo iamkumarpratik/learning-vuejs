@@ -2,8 +2,13 @@ const express = require('express')
 const mongoose = require('mongoose')
 require("dotenv/config")
 const bodyParser = require('body-parser')
-const app = express()
+const cors = require('cors');
+const corsOptions ={
+    origin:'http://localhost:8000', 
+}
 
+const app = express()
+app.use(cors(corsOptions));
 const checkStatus = require("./api/status")
 const createSurveyResponse = require("./api/survey_api")
 
